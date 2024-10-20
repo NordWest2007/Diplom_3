@@ -24,40 +24,25 @@ class TestFeed:
 
     @allure.sub_suite("Заказы в ленте")
     @allure.title("заказы пользователя из раздела «История заказов» отображаются на странице «Лента заказов»")
-    def test_customer_orders_in_list_orders(self, driver, authentication_user):
-        list_custom_order = []
-        list_all_order = []
+    def test_customer_orders_in_list_orders(self, driver, authentication_user,create_order):
+
         feed = FeedPage(driver)
         feed.get_url(Constants.URL_HOME)
-        feed.wait_element(HomeLocators.ACCOUNT_BUTTON)
         feed.click_on_element(HomeLocators.ACCOUNT_BUTTON)
         feed.click_on_element(ProfileLocators.HISTORY_BUTTON)
+        last_customer_order = feed.get_customer_order()
 
-        custom_orders = feed.wait_elements(ProfileLocators.ORDER_LIST)
-        for order in custom_orders:
-            list_custom_order.append(order.text)
         feed.get_url(Constants.URL_FEED)
-        all_orders = feed.wait_elements(FeedLocators.ORDERS)
-        for order in all_orders:
-            list_all_order.append(order.text)
-
-        for order in list_custom_order:
-            assert order in list_custom_order
+        list_all_order = feed.get_all_order()
+        assert last_customer_order in list_all_order
 
     @allure.sub_suite("Счетчики")
     @allure.title("при создании нового заказа счётчик Выполнено за всё время увеличивается")
     def test_create_new_order_increment_counter(self, driver, authentication_user):
-
         feed = FeedPage(driver)
-        feed.get_url(Constants.URL_FEED)
-        feed.wait_element(FeedLocators.COUNTER_ALL)
-        cnt = int(feed.get_text_from_element(FeedLocators.COUNTER_ALL))
-
-        feed.get_url(Constants.URL_HOME)
+        cnt = feed.get_counter_all_order()
         home = HomePage(driver)
         home.create_order()
-        home.click_on_element(HomeLocators.CREATE_ORDER)
-
         feed.get_url(Constants.URL_FEED)
         feed.wait_element(FeedLocators.COUNTER_ALL)
         assert cnt < int(feed.get_text_from_element(FeedLocators.COUNTER_ALL))
@@ -82,19 +67,14 @@ class TestFeed:
 
     @allure.sub_suite("В работе")
     @allure.title("после оформления заказа его номер появляется в разделе В работе")
-    def test_new_order_at_work(self, driver, authentication_user):
+    def test_new_order_at_work(self, driver, authentication_user, create_order):
 
-        home = HomePage(driver)
-        home.get_url(Constants.URL_HOME)
-        home.create_order()
-        home.click_on_element(HomeLocators.CREATE_ORDER)
-        order_number = '9999'
-        while order_number == '9999':
-            order_number = home.get_text_from_element(HomeLocators.ORDER_NUMBER)
+        feed = FeedPage(driver)
+        order_number=feed.get_order_number()
 
-        home.get_url(Constants.URL_FEED)
-        orders_at_work = home.wait_elements(FeedLocators.ALL_ORDER_AT_WORK)
+        feed.get_url(Constants.URL_FEED)
+        orders_at_work = feed.wait_elements(FeedLocators.ALL_ORDER_AT_WORK)
         if len(orders_at_work) == 1:
             while orders_at_work[0].text == 'Все текущие заказы готовы!':
-                orders_at_work = home.wait_elements(FeedLocators.ALL_ORDER_AT_WORK)
+                orders_at_work = feed.wait_elements(FeedLocators.ALL_ORDER_AT_WORK)
         assert order_number in orders_at_work[0].text

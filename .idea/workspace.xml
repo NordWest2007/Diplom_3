@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c987ceb-bbd6-4938-8d32-c95de6a7e1f9" name="Changes" comment="добавление аллюра">
+    <list default="true" id="0c987ceb-bbd6-4938-8d32-c95de6a7e1f9" name="Changes" comment="авторизация через фикстуру">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators/feed_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/feed_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators/login_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/login_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/profile_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/profile_locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/feed_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/feed_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_feed.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_feed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +69,7 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.pytest for test_feed.TestFeed.test_click_order">
+  <component name="RunManager" selected="Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_counter">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Diplom_3" />
       <option name="ENV_FILES" value="" />
@@ -149,7 +145,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_feed.TestFeed.test_new_order_at_work" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_feed.TestFeed.test_create_new_order_increment_counter" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,11 +159,11 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_feed.TestFeed.test_new_order_at_work&quot;" />
+      <option name="_new_target" value="&quot;test_feed.TestFeed.test_create_new_order_increment_counter&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_forgot_password.TestForgotPassword" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_feed.TestFeed.test_customer_orders_in_list_orders" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,7 +177,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_forgot_password.TestForgotPassword&quot;" />
+      <option name="_new_target" value="&quot;test_feed.TestFeed.test_customer_orders_in_list_orders&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -223,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_counter" />
+        <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_customer_orders_in_list_orders" />
         <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_click_order" />
         <item itemvalue="Python tests.pytest for test_login.TestLogin.test_exit_account" />
         <item itemvalue="Python tests.pytest for test_home.TestHome" />
-        <item itemvalue="Python tests.pytest for test_forgot_password.TestForgotPassword" />
-        <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_new_order_at_work" />
       </list>
     </recent_temporary>
   </component>
@@ -271,14 +267,32 @@
       <option name="project" value="LOCAL" />
       <updated>1729427250497</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feed улучшен">
+      <option name="closed" value="true" />
+      <created>1729429314025</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729429314025</updated>
+    </task>
+    <task id="LOCAL-00005" summary="авторизация через фикстуру">
+      <option name="closed" value="true" />
+      <created>1729430031497</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729430031497</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="тесты на Восстановление пароля" />
     <MESSAGE value="все остальные тесты" />
     <MESSAGE value="добавление аллюра" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавление аллюра" />
+    <MESSAGE value="feed улучшен" />
+    <MESSAGE value="авторизация через фикстуру" />
+    <option name="LAST_COMMIT_MESSAGE" value="авторизация через фикстуру" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

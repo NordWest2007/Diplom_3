@@ -34,4 +34,5 @@ class HomePage(BasePage):
         drag_to = self.wait_element(HomeLocators.BURGER_MAKE)
         actions = ActionChains(self.driver)
         actions.drag_and_drop(drag_from, drag_to).click_and_hold().perform()
+        self.click_on_element(HomeLocators.CREATE_ORDER)
 

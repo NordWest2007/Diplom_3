@@ -5,6 +5,7 @@ from selenium import webdriver
 from constants import Constants
 from locators.home_locators import HomeLocators
 from locators.login_locators import LoginLocators
+from pages.home_page import HomePage
 from pages.login_page import LoginPage
 
 
@@ -22,11 +23,16 @@ def driver(request):
 
     driver.quit()
 
+
+@allure.step("Авторизация")
 @pytest.fixture()
 def authentication_user(driver):
-        login = LoginPage(driver)
-        login.get_url(Constants.URL_LOGIN)
-        login.set_text_to_element(LoginLocators.EMAIL_FIELD, LoginLocators.EMAIL)
-        login.set_text_to_element(LoginLocators.PASSWORD_FIELD, LoginLocators.PASSWORD)
-        login.click_on_element_without_wait(LoginLocators.ENTER_BUTTON)
-        login.wait_element(HomeLocators.ENTER_BUTTON)
+    login = LoginPage(driver)
+    login.authentication_user()
+
+
+@allure.step('Создание заказа')
+@pytest.fixture()
+def create_order(driver):
+    home = HomePage(driver)
+    home.create_order()
