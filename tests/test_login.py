@@ -24,6 +24,7 @@ class TestLogin:
     def test_click_history_button(self, driver):
         login = LoginPage(driver)
         login.authentication_user()
+        login.wait_element(HomeLocators.ACCOUNT_BUTTON).click()
         login.wait_element(ProfileLocators.HISTORY_BUTTON).click()
         assert driver.current_url == Constants.URL_HISTORY
 

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c987ceb-bbd6-4938-8d32-c95de6a7e1f9" name="Changes" comment="упрощены тесты feed">
-      <change beforePath="$PROJECT_DIR$/pages/feed_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/feed_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_feed.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_feed.py" afterDir="false" />
+    <list default="true" id="0c987ceb-bbd6-4938-8d32-c95de6a7e1f9" name="Changes" comment="дочищено">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,13 +59,14 @@
     "Python tests.pytest for test_home.TestHome.test_click_constructor.executor": "Run",
     "Python tests.pytest for test_home.TestHome.test_drag_and_drop.executor": "Run",
     "Python tests.pytest for test_home.TestHome.test_get_order_from_account.executor": "Run",
+    "Python tests.pytest for test_login.TestLogin.test_click_history_button.executor": "Run",
     "Python tests.pytest for test_login.TestLogin.test_exit_account.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/Admin/yandex/Diplom_3",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.pytest for test_feed.TestFeed.test_new_order_at_work">
+  <component name="RunManager" selected="Python tests.pytest for test_login.TestLogin.test_click_history_button">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Diplom_3" />
       <option name="ENV_FILES" value="" />
@@ -195,7 +196,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_login.TestLogin.test_exit_account" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_login.TestLogin.test_click_history_button" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -209,17 +210,17 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_login.TestLogin.test_exit_account&quot;" />
+      <option name="_new_target" value="&quot;test_login.TestLogin.test_click_history_button&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_login.TestLogin.test_click_history_button" />
         <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_new_order_at_work" />
         <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_counter" />
         <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_customer_orders_in_list_orders" />
         <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_click_order" />
-        <item itemvalue="Python tests.pytest for test_login.TestLogin.test_exit_account" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729434097977</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="дочищено">
+      <option name="closed" value="true" />
+      <created>1729434613983</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729434613983</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -297,7 +306,8 @@
     <MESSAGE value="feed улучшен" />
     <MESSAGE value="авторизация через фикстуру" />
     <MESSAGE value="упрощены тесты feed" />
-    <option name="LAST_COMMIT_MESSAGE" value="упрощены тесты feed" />
+    <MESSAGE value="дочищено" />
+    <option name="LAST_COMMIT_MESSAGE" value="дочищено" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
