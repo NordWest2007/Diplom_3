@@ -36,3 +36,4 @@ class HomePage(BasePage):
         actions.drag_and_drop(drag_from, drag_to).click_and_hold().perform()
         self.click_on_element(HomeLocators.CREATE_ORDER)
 
+

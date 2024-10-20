@@ -56,6 +56,7 @@ class FeedPage(BasePage):
     def create_order(self, driver):
         home = HomePage(driver)
         home.create_order()
+        self.get_order_number()
 
     @allure.step('Ожидание заказа в Работе')
     def get_order_at_work(self):

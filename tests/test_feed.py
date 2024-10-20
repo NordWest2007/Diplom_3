@@ -39,7 +39,7 @@ class TestFeed:
     def test_create_new_order_increment_counter(self, driver, authentication_user):
         feed = FeedPage(driver)
         cnt = feed.get_counter_all_order()
-
+        feed.create_order(driver)
         feed.get_url(Constants.URL_FEED)
         feed.wait_element(FeedLocators.COUNTER_ALL)
         assert cnt < int(feed.get_text_from_element(FeedLocators.COUNTER_ALL))
@@ -54,7 +54,7 @@ class TestFeed:
         number = int(feed.get_text_from_element(FeedLocators.COUNTER_DAY))
 
         feed.get_url(Constants.URL_HOME)
-        feed.create_order()
+        feed.create_order(driver)
 
         feed.get_url(Constants.URL_FEED)
         feed.wait_element(FeedLocators.COUNTER_DAY)

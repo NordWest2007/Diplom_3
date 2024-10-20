@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c987ceb-bbd6-4938-8d32-c95de6a7e1f9" name="Changes" comment="дочищено">
+    <list default="true" id="0c987ceb-bbd6-4938-8d32-c95de6a7e1f9" name="Changes" comment="history button исправлено">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/feed_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/feed_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_feed.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_feed.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +68,7 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.pytest for test_login.TestLogin.test_click_history_button">
+  <component name="RunManager" selected="Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_day_counter">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Diplom_3" />
       <option name="ENV_FILES" value="" />
@@ -124,24 +126,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_feed.TestFeed.test_click_order" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_feed.TestFeed.test_click_order&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest for test_feed.TestFeed.test_create_new_order_increment_counter" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <option name="ENV_FILES" value="" />
@@ -157,6 +141,24 @@
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_feed.TestFeed.test_create_new_order_increment_counter&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_feed.TestFeed.test_create_new_order_increment_day_counter" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_feed.TestFeed.test_create_new_order_increment_day_counter&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -216,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_day_counter" />
+        <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_counter" />
         <item itemvalue="Python tests.pytest for test_login.TestLogin.test_click_history_button" />
         <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_new_order_at_work" />
-        <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_counter" />
         <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_customer_orders_in_list_orders" />
-        <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_click_order" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729434613983</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="history button исправлено">
+      <option name="closed" value="true" />
+      <created>1729436599134</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729436599134</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -307,7 +317,8 @@
     <MESSAGE value="авторизация через фикстуру" />
     <MESSAGE value="упрощены тесты feed" />
     <MESSAGE value="дочищено" />
-    <option name="LAST_COMMIT_MESSAGE" value="дочищено" />
+    <MESSAGE value="history button исправлено" />
+    <option name="LAST_COMMIT_MESSAGE" value="history button исправлено" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
