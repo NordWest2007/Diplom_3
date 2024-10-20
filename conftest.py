@@ -4,8 +4,7 @@ from selenium import webdriver
 
 
 @allure.step("Тест запускается в {params}")
-#@pytest.fixture(params=['Chrome', 'Firefox'])
-@pytest.fixture(params=['Chrome'])
+@pytest.fixture(params=['Chrome', 'Firefox'])
 def driver(request):
     driver = None
     if request.param == 'Chrome':

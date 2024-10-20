@@ -2,7 +2,6 @@ from constants import Constants
 from locators.home_locators import HomeLocators
 from locators.login_locators import LoginLocators
 from pages.base_page import BasePage
-from pages.home_page import HomePage
 
 
 class LoginPage(BasePage):

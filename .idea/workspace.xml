@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c987ceb-bbd6-4938-8d32-c95de6a7e1f9" name="Changes" comment="все остальные тесты">
+    <list default="true" id="0c987ceb-bbd6-4938-8d32-c95de6a7e1f9" name="Changes" comment="добавление аллюра">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locators/feed_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/feed_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locators/home_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/home_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locators/login_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/locators/login_locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/feed_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/feed_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_feed.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_feed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_forgot_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_forgot_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_home.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_home.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,12 +67,13 @@
     "Python tests.pytest for test_home.TestHome.test_click_constructor.executor": "Run",
     "Python tests.pytest for test_home.TestHome.test_drag_and_drop.executor": "Run",
     "Python tests.pytest for test_home.TestHome.test_get_order_from_account.executor": "Run",
+    "Python tests.pytest for test_login.TestLogin.test_exit_account.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/Admin/yandex/Diplom_3",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.pytest for test_home.TestHome">
+  <component name="RunManager" selected="Python tests.pytest for test_feed.TestFeed.test_click_order">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Diplom_3" />
       <option name="ENV_FILES" value="" />
@@ -130,7 +131,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_feed.TestFeed.test_create_new_order_increment_counter" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_feed.TestFeed.test_click_order" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,25 +145,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_feed.TestFeed.test_create_new_order_increment_counter&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_feed.TestFeed.test_create_new_order_increment_day_counter" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_feed.TestFeed.test_create_new_order_increment_day_counter&quot;" />
+      <option name="_new_target" value="&quot;test_feed.TestFeed.test_click_order&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -220,13 +203,31 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_login.TestLogin.test_exit_account" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login.TestLogin.test_exit_account&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_click_order" />
+        <item itemvalue="Python tests.pytest for test_login.TestLogin.test_exit_account" />
         <item itemvalue="Python tests.pytest for test_home.TestHome" />
         <item itemvalue="Python tests.pytest for test_forgot_password.TestForgotPassword" />
         <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_new_order_at_work" />
-        <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_day_counter" />
-        <item itemvalue="Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_counter" />
       </list>
     </recent_temporary>
   </component>
@@ -262,13 +263,22 @@
       <option name="project" value="LOCAL" />
       <updated>1729279990118</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="добавление аллюра">
+      <option name="closed" value="true" />
+      <created>1729427250497</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729427250497</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="тесты на Восстановление пароля" />
     <MESSAGE value="все остальные тесты" />
-    <option name="LAST_COMMIT_MESSAGE" value="все остальные тесты" />
+    <MESSAGE value="добавление аллюра" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавление аллюра" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -23,7 +23,7 @@ class FeedLocators:
 
     HISTORY_NUMBER_ORDER = (By.XPATH, '//div[contains(@class,"OrderFeed_contentBox")]/ul/li[1]//div[contains(@class,'
                                       '"OrderHistory_textBox")]/p[contains(@class,"text_type_digits-default")]')
-    HISTORY_BURGER_NAME = (By.XPATH,'//div[contains(@class,"OrderFeed_contentBox")]/ul/li[1]//h2[contains(@class,'
-                                    '"text_type_main-medium")]')
+    HISTORY_BURGER_NAME = (By.XPATH, '//div[contains(@class,"OrderFeed_contentBox")]/ul/li[1]//h2[contains(@class,'
+                                     '"text_type_main-medium")]')
     HISTORY_BURGER_PRICE = (By.XPATH, '//div[contains(@class,"OrderFeed_contentBox")]/ul/li[1]//div[contains(@class,'
                                       '"OrderHistory_dataBox")]//p')

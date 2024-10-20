@@ -18,19 +18,9 @@ class TestFeed:
     def test_click_order(self, driver):
         feed = FeedPage(driver)
         feed.get_url(Constants.URL_FEED)
-        history_number = feed.get_text_from_element(FeedLocators.HISTORY_NUMBER_ORDER)
-        history_name = feed.get_text_from_element(FeedLocators.HISTORY_BURGER_NAME)
-        history_price = feed.get_text_from_element(FeedLocators.HISTORY_BURGER_PRICE)
-
         feed.wait_element(FeedLocators.ORDER).click()
-        detail_number = feed.get_text_from_element(FeedLocators.MODAL_DETAILS_NUMBER_ORDER)
-        detail_name = feed.get_text_from_element(FeedLocators.MODAL_DETAILS_NUMBER_NAME)
-        detail_price = feed.get_text_from_element(FeedLocators.MODAL_DETAILS_BURGER_PRICE)
-
         assert feed.wait_element(FeedLocators.MODAL_ORDER_WINDOW)
-        assert history_number == detail_number
-        assert history_name == detail_name
-        assert history_price == detail_price
+        assert feed.get_data_history_order() == feed.get_data_detail_order()
 
     @allure.sub_suite("Заказы в ленте")
     @allure.title("заказы пользователя из раздела «История заказов» отображаются на странице «Лента заказов»")

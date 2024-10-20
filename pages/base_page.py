@@ -22,18 +22,6 @@ class BasePage:
     def wait_elements(self, locator):
         WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located(locator))
         return self.driver.find_elements(*locator)
-    #
-    # def wait_element_clickable(self, locator):
-    #     WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable(locator))
-    #     return self.driver.find_element(*locator)
-    #
-    # def wait_text_on_element(self, locator, text):
-    #     WebDriverWait(self.driver, 30).until(
-    #         EC.text_to_be_present_in_element_value(locator, text))
-    #
-    # def wait_element_visible(self, locator):
-    #     WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located(locator))
-    #     return self.driver.find_element(*locator)
 
     @allure.step('ожидание видимости элемента {locator}')
     def wait_element_invisibility(self, locator):
@@ -55,15 +43,6 @@ class BasePage:
     @allure.step('Получение текста элемента {locator}')
     def get_text_from_element(self, locator):
         return self.driver.find_element(*locator).text
-
-    # @allure.step('Получение текста элемента {locator}')
-    # def get_count_elements(self, locator):
-    #     cnt = self.driver.find_elements(*locator)
-    #     return len(cnt)
-    #
-    # @allure.step('Переход в конец страницы')
-    # def scroll_end(self):
-    #     self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
     @allure.step('Создание локатора через форматирование')
     def create_locator(self, locator, num):

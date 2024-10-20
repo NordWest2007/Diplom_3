@@ -12,3 +12,4 @@ class LoginLocators:
     PASSWORD = 'Qwerty13'
     SAVE_BUTTON = (By.XPATH, "//button[text()='Сохранить']")
     ENTER_BUTTON = (By.XPATH, "//button[text()='Войти']")
+    ENTER_TEXT = (By.XPATH, "//h2[text()='Вход']")
