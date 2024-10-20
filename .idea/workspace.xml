@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0c987ceb-bbd6-4938-8d32-c95de6a7e1f9" name="Changes" comment="history button исправлено">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/feed_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/feed_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_feed.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_feed.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,40 +31,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_forgot_password.TestForgotPassword.test_click_forgot_password.executor": "Run",
-    "Python tests.Python tests for test_forgot_password.TestForgotPassword.test_click_view_password.executor": "Run",
-    "Python tests.Python tests for test_forgot_password.TestForgotPassword.test_input_email.executor": "Run",
-    "Python tests.Python tests for test_home.TestHome.test_click_close_modal_window.executor": "Run",
-    "Python tests.Python tests for test_home.TestHome.test_click_constructor.executor": "Run",
-    "Python tests.Python tests for test_home.TestHome.test_click_feedr.executor": "Run",
-    "Python tests.Python tests for test_home.TestHome.test_click_ingredient.executor": "Run",
-    "Python tests.Python tests for test_home.TestHome.test_drag_and_drop.executor": "Run",
-    "Python tests.Python tests for test_profile.TestProfile.test_click_account_button.executor": "Run",
-    "Python tests.Python tests for test_profile.TestProfile.test_click_feed_button.executor": "Run",
-    "Python tests.Python tests for test_profile.TestProfile.test_exit_account.executor": "Debug",
-    "Python tests.pytest for test_feed.TestFeed.test_click_account_button.executor": "Run",
-    "Python tests.pytest for test_feed.TestFeed.test_click_order.executor": "Run",
-    "Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_counter.executor": "Run",
-    "Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_day_counter.executor": "Run",
-    "Python tests.pytest for test_feed.TestFeed.test_customer_orders_in_list_orders.executor": "Run",
-    "Python tests.pytest for test_feed.TestFeed.test_new_order_at_work.executor": "Run",
-    "Python tests.pytest for test_feed.test_customer_orders_in_list_orders.executor": "Run",
-    "Python tests.pytest for test_forgot_password.TestForgotPassword.executor": "Run",
-    "Python tests.pytest for test_forgot_password.TestForgotPassword.test_click_view_password.executor": "Run",
-    "Python tests.pytest for test_home.TestHome.executor": "Run",
-    "Python tests.pytest for test_home.TestHome.test_click_close_modal_window.executor": "Run",
-    "Python tests.pytest for test_home.TestHome.test_click_constructor.executor": "Run",
-    "Python tests.pytest for test_home.TestHome.test_drag_and_drop.executor": "Run",
-    "Python tests.pytest for test_home.TestHome.test_get_order_from_account.executor": "Run",
-    "Python tests.pytest for test_login.TestLogin.test_click_history_button.executor": "Run",
-    "Python tests.pytest for test_login.TestLogin.test_exit_account.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Admin/yandex/Diplom_3",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_forgot_password.TestForgotPassword.test_click_forgot_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_forgot_password.TestForgotPassword.test_click_view_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_forgot_password.TestForgotPassword.test_input_email.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_home.TestHome.test_click_close_modal_window.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_home.TestHome.test_click_constructor.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_home.TestHome.test_click_feedr.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_home.TestHome.test_click_ingredient.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_home.TestHome.test_drag_and_drop.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_profile.TestProfile.test_click_account_button.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_profile.TestProfile.test_click_feed_button.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_profile.TestProfile.test_exit_account.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.pytest for test_feed.TestFeed.test_click_account_button.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_feed.TestFeed.test_click_order.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_counter.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_day_counter.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_feed.TestFeed.test_customer_orders_in_list_orders.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_feed.TestFeed.test_new_order_at_work.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_feed.test_customer_orders_in_list_orders.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_forgot_password.TestForgotPassword.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_forgot_password.TestForgotPassword.test_click_view_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_home.TestHome.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_home.TestHome.test_click_close_modal_window.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_home.TestHome.test_click_constructor.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_home.TestHome.test_drag_and_drop.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_home.TestHome.test_get_order_from_account.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_login.TestLogin.test_click_history_button.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_login.TestLogin.test_exit_account.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/yandex/Diplom_3&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_day_counter">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Diplom_3" />
