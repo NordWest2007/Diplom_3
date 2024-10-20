@@ -5,8 +5,6 @@ from locators.feed_locators import FeedLocators
 from locators.home_locators import HomeLocators
 from locators.profile_locators import ProfileLocators
 from pages.feed_page import FeedPage
-from pages.home_page import HomePage
-from pages.login_page import LoginPage
 
 
 @allure.feature("Лента заказов")
@@ -24,7 +22,7 @@ class TestFeed:
 
     @allure.sub_suite("Заказы в ленте")
     @allure.title("заказы пользователя из раздела «История заказов» отображаются на странице «Лента заказов»")
-    def test_customer_orders_in_list_orders(self, driver, authentication_user,create_order):
+    def test_customer_orders_in_list_orders(self, driver, authentication_user, create_order):
 
         feed = FeedPage(driver)
         feed.get_url(Constants.URL_HOME)
@@ -41,8 +39,7 @@ class TestFeed:
     def test_create_new_order_increment_counter(self, driver, authentication_user):
         feed = FeedPage(driver)
         cnt = feed.get_counter_all_order()
-        home = HomePage(driver)
-        home.create_order()
+
         feed.get_url(Constants.URL_FEED)
         feed.wait_element(FeedLocators.COUNTER_ALL)
         assert cnt < int(feed.get_text_from_element(FeedLocators.COUNTER_ALL))
@@ -57,9 +54,7 @@ class TestFeed:
         number = int(feed.get_text_from_element(FeedLocators.COUNTER_DAY))
 
         feed.get_url(Constants.URL_HOME)
-        home = HomePage(driver)
-        home.create_order()
-        home.click_on_element(HomeLocators.CREATE_ORDER)
+        feed.create_order()
 
         feed.get_url(Constants.URL_FEED)
         feed.wait_element(FeedLocators.COUNTER_DAY)
@@ -70,11 +65,8 @@ class TestFeed:
     def test_new_order_at_work(self, driver, authentication_user, create_order):
 
         feed = FeedPage(driver)
-        order_number=feed.get_order_number()
-
+        order_number = feed.get_order_number()
         feed.get_url(Constants.URL_FEED)
-        orders_at_work = feed.wait_elements(FeedLocators.ALL_ORDER_AT_WORK)
-        if len(orders_at_work) == 1:
-            while orders_at_work[0].text == 'Все текущие заказы готовы!':
-                orders_at_work = feed.wait_elements(FeedLocators.ALL_ORDER_AT_WORK)
-        assert order_number in orders_at_work[0].text
+        orders_at_work=feed.get_order_at_work()
+
+        assert order_number in orders_at_work

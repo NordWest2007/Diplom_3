@@ -2,9 +2,6 @@ import allure
 import pytest
 from selenium import webdriver
 
-from constants import Constants
-from locators.home_locators import HomeLocators
-from locators.login_locators import LoginLocators
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 
