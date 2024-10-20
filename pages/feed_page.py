@@ -11,7 +11,6 @@ class FeedPage(BasePage):
         history_price = self.get_text_from_element(FeedLocators.HISTORY_BURGER_PRICE)
         return [history_number, history_name, history_price]
 
-
     def get_data_detail_order(self):
         detail_number = self.get_text_from_element(FeedLocators.MODAL_DETAILS_NUMBER_ORDER)
         detail_name = self.get_text_from_element(FeedLocators.MODAL_DETAILS_NUMBER_NAME)
