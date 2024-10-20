@@ -6,3 +6,4 @@ class Constants:
     URL_RESET_PASSWORD='https://stellarburgers.nomoreparties.site/reset-password'
     URL_PROFILE='https://stellarburgers.nomoreparties.site/account/profile'
     URL_HISTORY='https://stellarburgers.nomoreparties.site/account/order-history'
+    PASSWORD='mypassword'

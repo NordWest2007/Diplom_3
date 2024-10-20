@@ -6,7 +6,6 @@ class HomeLocators:
     FEED_BUTTON = (By.XPATH, '//a[@href="/feed"]')
     CONSTRUCTOR_BUTTON = (By.XPATH, '//p[text()="Конструктор"]/parent::*')
     ACCOUNT_BUTTON = (By.XPATH, '//a[@href="/account"]')
-    #DZEN = [By.XPATH, "//a[contains(@class,'dzen-layout--desktop-base-header')]"]
     MODAL_WINDOW = (By.XPATH, "//section[contains(@class,'Modal_modal_opened')]")
     MODAL_WINDOW_CLOSE_INGREDIENT = (By.XPATH, "//button[contains(@class,'Modal_modal__close')]")
     MODAL_WINDOW_CLOSE_ORDER = (By.XPATH, "//button[@class='Modal_modal__close_modified__3V5XS Modal_modal__close__TnseK']")

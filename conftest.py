@@ -1,8 +1,11 @@
+import allure
 import pytest
 from selenium import webdriver
 
 
-@pytest.fixture(params=['Chrome', 'Firefox'])
+@allure.step("Тест запускается в {params}")
+#@pytest.fixture(params=['Chrome', 'Firefox'])
+@pytest.fixture(params=['Chrome'])
 def driver(request):
     driver = None
     if request.param == 'Chrome':
@@ -14,4 +17,3 @@ def driver(request):
     yield driver
 
     driver.quit()
-

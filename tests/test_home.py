@@ -1,29 +1,34 @@
 import random
-from time import sleep
 
+import allure
 from selenium.webdriver import ActionChains
-from selenium.webdriver.common.by import By
 from constants import Constants
-from locators.feed_locators import FeedLocators
 from locators.home_locators import HomeLocators
-from locators.profile_locators import ProfileLocators
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 
 
+@allure.feature("Основной функционал")
+@allure.suite("Основной функционал")
 class TestHome:
+    @allure.sub_suite("Переходы")
+    @allure.title("на «Конструктор»")
     def test_click_constructor(self, driver):
         home = HomePage(driver)
         home.get_url(Constants.URL_LOGIN)
         home.click_on_element(HomeLocators.CONSTRUCTOR_BUTTON)
         assert driver.current_url == Constants.URL_HOME
 
-    def test_click_feedr(self, driver):
+    @allure.sub_suite("Переходы")
+    @allure.title("на «Лента заказов»")
+    def test_click_feed(self, driver):
         home = HomePage(driver)
         home.get_url(Constants.URL_HOME)
         home.click_on_element(HomeLocators.FEED_BUTTON)
         assert driver.current_url == Constants.URL_FEED
 
+    @allure.sub_suite("Всплывающее окно")
+    @allure.title("клик на ингредиент")
     def test_click_ingredient(self, driver):
         home = HomePage(driver)
         home.get_url(Constants.URL_HOME)
@@ -32,15 +37,19 @@ class TestHome:
 
         assert home.wait_element(HomeLocators.MODAL_WINDOW)
 
+    @allure.sub_suite("Всплывающее окно")
+    @allure.title("закрывается кликом по крестику")
     def test_click_close_modal_window(self, driver):
         home = HomePage(driver)
         home.get_url(Constants.URL_HOME)
         elements = home.wait_elements(HomeLocators.INGREDIENTS)
-        elements[random.randint(1, len(elements)-1)].click()
+        elements[random.randint(1, len(elements) - 1)].click()
         home.wait_element(HomeLocators.MODAL_WINDOW)
         home.wait_element(HomeLocators.MODAL_WINDOW_CLOSE_INGREDIENT).click()
         assert home.wait_element_invisibility(HomeLocators.MODAL_WINDOW_INVISIBILITY)
 
+    @allure.sub_suite("Счетчик ингредиента")
+    @allure.title("при добавлении ингредиента в заказ, увеличивается каунтер данного ингредиента")
     def test_drag_and_drop(self, driver):
         home = HomePage(driver)
         home.get_url(Constants.URL_HOME)
@@ -58,11 +67,12 @@ class TestHome:
             home.get_text_from_element(element)
             assert int(home.get_text_from_element(element)) == i
 
-    def test_get_order_from_account(self, driver):
+    @allure.sub_suite("Оформление заказа")
+    @allure.title("залогиненный пользователь может оформить заказ")
+    def test_create_order_for_account(self, driver):
         login = LoginPage(driver)
         login.authentication_user()
         home = HomePage(driver)
         home.get_url(Constants.URL_HOME)
         home.click_on_element(HomeLocators.CREATE_ORDER)
         assert home.wait_element(HomeLocators.MODAL_WINDOW)
-
