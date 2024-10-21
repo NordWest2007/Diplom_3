@@ -3,13 +3,41 @@ import allure
 from constants import Constants
 from locators.feed_locators import FeedLocators
 from locators.home_locators import HomeLocators
-from locators.profile_locators import ProfileLocators
+from locators.account_locators import AccountLocators
 from pages.base_page import BasePage
 from pages.home_page import HomePage
 
 
 class FeedPage(BasePage):
     driver = None
+
+    @allure.step('Клик на Оформление заказа')
+    def click_order(self):
+        return self.wait_element(FeedLocators.ORDER).click()
+
+    @allure.step('Ожидание модального окна')
+    def open_order_window(self):
+        return self.wait_element(FeedLocators.MODAL_ORDER_WINDOW)
+
+    @allure.step('Переход на страницу Лента заказов')
+    def get_feed_url(self):
+        return self.get_url(Constants.URL_FEED)
+
+    @allure.step('Счетчик Всего заказов')
+    def get_counter_all_orders(self):
+        self.wait_element(FeedLocators.COUNTER_ALL)
+        return int(self.get_text_from_element(FeedLocators.COUNTER_ALL))
+
+    @allure.step('Счетчик Заказов за день')
+    def get_counter_day_order(self):
+        self.wait_element(FeedLocators.COUNTER_DAY)
+        return int(self.get_text_from_element(FeedLocators.COUNTER_DAY))
+
+    @allure.step('Переход к Истории заказов')
+    def go_to_history(self):
+        self.get_url(Constants.URL_HOME)
+        self.click_on_element(HomeLocators.ACCOUNT_BUTTON)
+        self.click_on_element(AccountLocators.HISTORY_BUTTON)
 
     @allure.step('Получение данных из карточки')
     def get_data_history_order(self):
@@ -27,7 +55,7 @@ class FeedPage(BasePage):
 
     @allure.step('Получение последнего номера заказа из истории пользователя')
     def get_customer_order(self):
-        custom_order = self.wait_element(ProfileLocators.ORDER_LAST)
+        custom_order = self.wait_element(AccountLocators.ORDER_LAST)
         return custom_order.text
 
     @allure.step('Получение списка заказов из ленты')
@@ -45,18 +73,11 @@ class FeedPage(BasePage):
         cnt = int(self.get_text_from_element(FeedLocators.COUNTER_ALL))
         return cnt
 
-    @allure.step('Получение номера заказа')
-    def get_order_number(self):
-        order_number = '9999'
-        while order_number == '9999':
-            order_number = self.get_text_from_element(HomeLocators.ORDER_NUMBER)
-        return order_number
-
-    @allure.step('Создание закака')
+    @allure.step('Создание заказа')
     def create_order(self, driver):
         home = HomePage(driver)
-        home.create_order()
-        self.get_order_number()
+        home.get_url(Constants.URL_HOME)
+        return home.create_order()
 
     @allure.step('Ожидание заказа в Работе')
     def get_order_at_work(self):

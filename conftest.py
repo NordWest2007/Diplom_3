@@ -3,7 +3,7 @@ import pytest
 from selenium import webdriver
 
 from pages.home_page import HomePage
-from pages.login_page import LoginPage
+from pages.account_page import  AccountPage
 
 
 @allure.step("Тест запускается в {params}")
@@ -24,12 +24,13 @@ def driver(request):
 @allure.step("Авторизация")
 @pytest.fixture()
 def authentication_user(driver):
-    login = LoginPage(driver)
-    login.authentication_user()
+    account = AccountPage(driver)
+    account.authentication_user()
 
 
 @allure.step('Создание заказа')
 @pytest.fixture()
 def create_order(driver):
     home = HomePage(driver)
-    home.create_order()
+    return home.create_order()
+

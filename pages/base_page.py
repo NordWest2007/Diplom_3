@@ -47,3 +47,7 @@ class BasePage:
     @allure.step('Создание локатора через форматирование')
     def create_locator(self, locator, num):
         return (locator[0], locator[1].format(num))
+
+    @allure.step('Текущий URL соответствует {url}')
+    def check_url(self, url):
+        return self.driver.current_url == url
