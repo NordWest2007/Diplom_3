@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c987ceb-bbd6-4938-8d32-c95de6a7e1f9" name="Changes" comment="локаторы перенесены в page" />
+    <list default="true" id="0c987ceb-bbd6-4938-8d32-c95de6a7e1f9" name="Changes" comment="requirements">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/account_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/account_page.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +48,7 @@
     "Python tests.Python tests for test_profile.TestProfile.test_exit_account.executor": "Debug",
     "Python tests.pytest for test_account.TestAccount.executor": "Run",
     "Python tests.pytest for test_account.TestAccount.test_click_account_button.executor": "Run",
+    "Python tests.pytest for test_account.TestAccount.test_click_history_button.executor": "Run",
     "Python tests.pytest for test_account.TestAccount.test_click_view_password.executor": "Run",
     "Python tests.pytest for test_feed.TestFeed.executor": "Run",
     "Python tests.pytest for test_feed.TestFeed.test_click_account_button.executor": "Run",
@@ -68,11 +73,11 @@
     "Python tests.pytest for test_login.TestLogin.test_click_history_button.executor": "Run",
     "Python tests.pytest for test_login.TestLogin.test_exit_account.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Admin/yandex/Diplom_3",
+    "last_opened_file_path": "C:/Users/Admin/yandex/Diplom_1",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.pytest for test_account.TestAccount.test_click_view_password">
+  <component name="RunManager" selected="Python tests.pytest for test_account.TestAccount.test_click_history_button">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Diplom_3" />
       <option name="ENV_FILES" value="" />
@@ -166,6 +171,24 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_account.TestAccount.test_click_history_button" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_account.TestAccount.test_click_history_button&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test_account.TestAccount.test_click_view_password" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <option name="ENV_FILES" value="" />
@@ -202,31 +225,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_home.TestHome.test_drag_and_drop" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_home.TestHome.test_drag_and_drop&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_account.TestAccount.test_click_history_button" />
         <item itemvalue="Python tests.pytest for test_account.TestAccount.test_click_view_password" />
         <item itemvalue="Python tests.pytest for test_account.TestAccount" />
         <item itemvalue="Python tests.pytest for test_account.TestAccount.test_click_account_button" />
         <item itemvalue="Python tests.pytest for test_home.TestHome.test_create_order_for_account" />
-        <item itemvalue="Python tests.pytest for test_home.TestHome.test_drag_and_drop" />
       </list>
     </recent_temporary>
   </component>
@@ -326,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729534287472</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="requirements">
+      <option name="closed" value="true" />
+      <created>1729534556674</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729534556674</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -340,7 +353,8 @@
     <MESSAGE value="history button исправлено" />
     <MESSAGE value="отчет" />
     <MESSAGE value="локаторы перенесены в page" />
-    <option name="LAST_COMMIT_MESSAGE" value="локаторы перенесены в page" />
+    <MESSAGE value="requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

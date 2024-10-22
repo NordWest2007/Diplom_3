@@ -6,6 +6,7 @@ class Constants:
     URL_RESET_PASSWORD = 'https://stellarburgers.nomoreparties.site/reset-password'
     URL_PROFILE = 'https://stellarburgers.nomoreparties.site/account/profile'
     URL_HISTORY = 'https://stellarburgers.nomoreparties.site/account/order-history'
-
-    EMAIL = 'egorova_13@gmail.com'
     PASSWORD = 'Qwerty13'
+    ENDPOINT_CREATE_USER='https://stellarburgers.nomoreparties.site/api/auth/register'
+    ENDPOINT_LOGIN ='https://stellarburgers.nomoreparties.site/api/auth/login'
+    ENDPOINT_DELETE ='https://stellarburgers.nomoreparties.site/api/auth/user'

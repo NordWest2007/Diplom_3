@@ -51,9 +51,9 @@ class AccountPage(BasePage):
         self.get_url(Constants.URL_LOGIN)
 
     @allure.step('Авторизация ')
-    def authentication_user(self):
+    def authentication_user(self,email, password):
         self.get_url(Constants.URL_LOGIN)
-        self.set_text_to_element(AccountLocators.EMAIL_FIELD, Constants.EMAIL)
-        self.set_text_to_element(AccountLocators.PASSWORD_FIELD, Constants.PASSWORD)
+        self.set_text_to_element(AccountLocators.EMAIL_FIELD, email)
+        self.set_text_to_element(AccountLocators.PASSWORD_FIELD, password)
         self.click_on_element_without_wait(AccountLocators.ENTER_BUTTON)
         self.wait_element(HomeLocators.ENTER_BUTTON)
