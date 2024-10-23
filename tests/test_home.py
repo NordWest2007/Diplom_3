@@ -1,8 +1,8 @@
 import random
 
 import allure
-from selenium.webdriver import ActionChains
-from constants import Constants
+
+from data.data_url import DataUrl
 from pages.home_page import HomePage
 
 
@@ -15,7 +15,7 @@ class TestHome:
         home = HomePage(driver)
         home.get_url_home()
         home.click_constructor()
-        home.check_url(Constants.URL_HOME)
+        home.check_url(DataUrl.URL_HOME)
 
     @allure.sub_suite("Переходы")
     @allure.title("на «Лента заказов»")
@@ -23,7 +23,7 @@ class TestHome:
         home = HomePage(driver)
         home.get_url_home()
         home.click_feed()
-        home.check_url(Constants.URL_FEED)
+        home.check_url(DataUrl.URL_FEED)
 
     @allure.sub_suite("Всплывающее окно")
     @allure.title("клик на ингредиент")
@@ -52,11 +52,8 @@ class TestHome:
         element_number = random.randint(1, len(elements) - 1)
         drag_from = elements[element_number]
         drag_to = home.element_burger()
-        actions = ActionChains(driver)
         for i in range(1, 3):
-            actions.drag_and_drop(drag_from, drag_to)
-            actions.click_and_hold()
-            actions.perform()
+            home.drag_and_drop(drag_from,drag_to)
             element = home.get_counter_locator(element_number)
             home.wait_element(element)
             assert int(home.get_text_from_element(element)) == i

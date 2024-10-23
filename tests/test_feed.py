@@ -1,5 +1,8 @@
 import allure
+
+from pages.account_page import AccountPage
 from pages.feed_page import FeedPage
+from pages.home_page import HomePage
 
 
 @allure.feature("Лента заказов")
@@ -18,9 +21,13 @@ class TestFeed:
     @allure.sub_suite("Заказы в ленте")
     @allure.title("заказы пользователя из раздела «История заказов» отображаются на странице «Лента заказов»")
     def test_customer_orders_in_list_orders(self, driver, authentication_user, create_order):
+        home = HomePage(driver)
+        home.get_url_home()
+        home.click_account()
+        account = AccountPage(driver)
+        account.click_history_button()
         feed = FeedPage(driver)
-        feed.go_to_history()
-        last_customer_order = feed.get_customer_order()
+        last_customer_order = account.get_customer_order()
         feed.get_feed_url()
         list_all_order = feed.get_all_order()
         assert last_customer_order in list_all_order
@@ -30,7 +37,8 @@ class TestFeed:
     def test_create_new_order_increment_counter(self, driver, authentication_user):
         feed = FeedPage(driver)
         cnt = feed.get_counter_all_order()
-        feed.create_order(driver)
+        home = HomePage(driver)
+        home.create_order()
         feed.get_feed_url()
 
         assert cnt < feed.get_counter_all_orders()
@@ -41,7 +49,8 @@ class TestFeed:
         feed = FeedPage(driver)
         feed.get_feed_url()
         number = feed.get_counter_day_order()
-        feed.create_order(driver)
+        home = HomePage(driver)
+        home.create_order()
         feed.get_feed_url()
 
         assert number < feed.get_counter_day_order()

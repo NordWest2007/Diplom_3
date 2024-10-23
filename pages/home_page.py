@@ -1,19 +1,18 @@
 import random
 
 import allure
-from selenium.webdriver import ActionChains
 
-from constants import Constants
+
+from data.data_url import DataUrl
 from locators.home_locators import HomeLocators
 from pages.base_page import BasePage
 
 
 class HomePage(BasePage):
-    driver = None
 
     @allure.step('Переход к домашней странице')
     def get_url_home(self):
-        self.get_url(Constants.URL_HOME)
+        self.get_url(DataUrl.URL_HOME)
 
     @allure.step('Клик на Конструктор')
     def click_constructor(self):
@@ -22,6 +21,10 @@ class HomePage(BasePage):
     @allure.step('Клик Лента Заказов')
     def click_feed(self):
         self.click_on_element(HomeLocators.FEED_BUTTON)
+
+    @allure.step('Клик на Личный кабинет')
+    def click_account(self):
+        self.wait_element(HomeLocators.ACCOUNT_BUTTON).click()
 
     @allure.step('Клик на случайном Ингредиенте')
     def click_on_random_ingredient(self):
@@ -54,7 +57,7 @@ class HomePage(BasePage):
 
     @allure.step('Переход к странице логина')
     def get_url_login(self):
-        self.get_url(Constants.URL_LOGIN)
+        self.get_url(DataUrl.URL_LOGIN)
 
     @allure.step('Получение номера заказа')
     def get_order_number(self):
@@ -65,27 +68,28 @@ class HomePage(BasePage):
 
     @allure.step('Создание заказа')
     def create_order(self) -> None:
-        self.get_url(Constants.URL_HOME)
+        self.get_url(DataUrl.URL_HOME)
         buns = self.wait_elements(HomeLocators.BUNS)
         element_number = random.randint(1, len(buns) - 1)
         drag_from = buns[element_number]
         drag_to = self.wait_element(HomeLocators.BURGER_MAKE)
-        actions = ActionChains(self.driver)
-        actions.drag_and_drop(drag_from, drag_to).click_and_hold().perform()
+        self.drag_and_drop(drag_from, drag_to)
 
         ingredients = self.wait_elements(HomeLocators.INGREDIENTS)
         element_number = random.randint(1, len(ingredients) - 1)
         drag_from = ingredients[element_number]
         drag_to = self.wait_element(HomeLocators.BURGER_MAKE)
-        actions = ActionChains(self.driver)
-        actions.drag_and_drop(drag_from, drag_to).click_and_hold().perform()
+        self.drag_and_drop(drag_from, drag_to)
 
         sauces = self.wait_elements(HomeLocators.SAUCES)
         element_number = random.randint(1, len(sauces) - 1)
         drag_from = sauces[element_number]
         drag_to = self.wait_element(HomeLocators.BURGER_MAKE)
-        actions = ActionChains(self.driver)
-        actions.drag_and_drop(drag_from, drag_to).click_and_hold().perform()
+        self.drag_and_drop(drag_from, drag_to)
         self.click_on_element(HomeLocators.CREATE_ORDER)
         order_number = f"0{self.get_order_number()}"
         return order_number
+
+    @allure.step('Ожидание кнопки Оформить заказ')
+    def wait_enter_button(self):
+        self.wait_element(HomeLocators.ENTER_BUTTON)

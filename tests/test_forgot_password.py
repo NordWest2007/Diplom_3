@@ -1,6 +1,8 @@
 import allure
 
-from constants import Constants
+
+from data.data_url import DataUrl
+from pages.account_page import AccountPage
 from pages.forgot_password_page import ForgotPasswordPage
 
 
@@ -10,16 +12,18 @@ class TestForgotPassword:
     @allure.sub_suite("клик Восстановить пароль")
     @allure.title("переход на страницу восстановления пароля по кнопке «Восстановить пароль»")
     def test_click_forgot_password(self, driver):
+        account = AccountPage(driver)
+        account.click_forgot_link()
         forgot = ForgotPasswordPage(driver)
-        forgot.click_forgot_link()
-        forgot.check_url(Constants.URL_FORGOT_PASSWORD)
+        forgot.check_url(DataUrl.URL_FORGOT_PASSWORD)
 
     @allure.sub_suite("Отправка на почту")
     @allure.title("ввод почты и клик по кнопке «Восстановить»")
     def test_input_email(self, driver):
+        account = AccountPage(driver)
+        account.click_forgot_link()
         forgot = ForgotPasswordPage(driver)
-        forgot.click_forgot_link()
         forgot.set_email()
         forgot.click_restore_button()
-        forgot.wait_save_button()
-        forgot.check_url(Constants.URL_RESET_PASSWORD)
+        account.wait_save_button()
+        forgot.check_url(DataUrl.URL_RESET_PASSWORD)

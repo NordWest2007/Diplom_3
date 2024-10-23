@@ -1,12 +1,4 @@
 class Constants:
-    URL_HOME = 'https://stellarburgers.nomoreparties.site/'
-    URL_FORGOT_PASSWORD = 'https://stellarburgers.nomoreparties.site/forgot-password'
-    URL_LOGIN = 'https://stellarburgers.nomoreparties.site/login'
-    URL_FEED = 'https://stellarburgers.nomoreparties.site/feed'
-    URL_RESET_PASSWORD = 'https://stellarburgers.nomoreparties.site/reset-password'
-    URL_PROFILE = 'https://stellarburgers.nomoreparties.site/account/profile'
-    URL_HISTORY = 'https://stellarburgers.nomoreparties.site/account/order-history'
     PASSWORD = 'Qwerty13'
-    ENDPOINT_CREATE_USER='https://stellarburgers.nomoreparties.site/api/auth/register'
-    ENDPOINT_LOGIN ='https://stellarburgers.nomoreparties.site/api/auth/login'
-    ENDPOINT_DELETE ='https://stellarburgers.nomoreparties.site/api/auth/user'
+    EMAIL = 'egorova_13@gmail.com'
+

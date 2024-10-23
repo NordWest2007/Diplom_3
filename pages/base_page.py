@@ -1,10 +1,10 @@
 import allure
+from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
 class BasePage:
-    url = None
 
     def __init__(self, driver):
         self.driver = driver
@@ -51,3 +51,8 @@ class BasePage:
     @allure.step('Текущий URL соответствует {url}')
     def check_url(self, url):
         return self.driver.current_url == url
+
+    @allure.step('Drag and drop')
+    def drag_and_drop(self, drag_from, drag_to):
+        actions = ActionChains(self.driver)
+        actions.drag_and_drop(drag_from, drag_to).click_and_hold().perform()
