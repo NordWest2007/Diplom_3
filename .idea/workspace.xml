@@ -1,23 +1,239 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c987ceb-bbd6-4938-8d32-c95de6a7e1f9" name="Changes" comment="" />
+    <list default="true" id="0c987ceb-bbd6-4938-8d32-c95de6a7e1f9" name="Changes" comment="requirements">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/account_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/account_page.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2nTL1m2xmZas2o92xTMi5KXGnm6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_forgot_password.TestForgotPassword.test_click_forgot_password.executor": "Run",
+    "Python tests.Python tests for test_forgot_password.TestForgotPassword.test_click_view_password.executor": "Run",
+    "Python tests.Python tests for test_forgot_password.TestForgotPassword.test_input_email.executor": "Run",
+    "Python tests.Python tests for test_home.TestHome.test_click_close_modal_window.executor": "Run",
+    "Python tests.Python tests for test_home.TestHome.test_click_constructor.executor": "Run",
+    "Python tests.Python tests for test_home.TestHome.test_click_feedr.executor": "Run",
+    "Python tests.Python tests for test_home.TestHome.test_click_ingredient.executor": "Run",
+    "Python tests.Python tests for test_home.TestHome.test_drag_and_drop.executor": "Run",
+    "Python tests.Python tests for test_profile.TestProfile.test_click_account_button.executor": "Run",
+    "Python tests.Python tests for test_profile.TestProfile.test_click_feed_button.executor": "Run",
+    "Python tests.Python tests for test_profile.TestProfile.test_exit_account.executor": "Debug",
+    "Python tests.pytest for test_account.TestAccount.executor": "Run",
+    "Python tests.pytest for test_account.TestAccount.test_click_account_button.executor": "Run",
+    "Python tests.pytest for test_account.TestAccount.test_click_history_button.executor": "Run",
+    "Python tests.pytest for test_account.TestAccount.test_click_view_password.executor": "Run",
+    "Python tests.pytest for test_feed.TestFeed.executor": "Run",
+    "Python tests.pytest for test_feed.TestFeed.test_click_account_button.executor": "Run",
+    "Python tests.pytest for test_feed.TestFeed.test_click_order.executor": "Run",
+    "Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_counter.executor": "Run",
+    "Python tests.pytest for test_feed.TestFeed.test_create_new_order_increment_day_counter.executor": "Run",
+    "Python tests.pytest for test_feed.TestFeed.test_customer_orders_in_list_orders.executor": "Run",
+    "Python tests.pytest for test_feed.TestFeed.test_new_order_at_work.executor": "Run",
+    "Python tests.pytest for test_feed.test_customer_orders_in_list_orders.executor": "Run",
+    "Python tests.pytest for test_forgot_password.TestForgotPassword.executor": "Run",
+    "Python tests.pytest for test_forgot_password.TestForgotPassword.test_click_forgot_password.executor": "Run",
+    "Python tests.pytest for test_forgot_password.TestForgotPassword.test_click_view_password.executor": "Run",
+    "Python tests.pytest for test_forgot_password.TestForgotPassword.test_input_email.executor": "Run",
+    "Python tests.pytest for test_home.TestHome.executor": "Run",
+    "Python tests.pytest for test_home.TestHome.test_click_close_modal_window.executor": "Run",
+    "Python tests.pytest for test_home.TestHome.test_click_constructor.executor": "Run",
+    "Python tests.pytest for test_home.TestHome.test_click_feed.executor": "Run",
+    "Python tests.pytest for test_home.TestHome.test_click_ingredient.executor": "Run",
+    "Python tests.pytest for test_home.TestHome.test_create_order_for_account.executor": "Run",
+    "Python tests.pytest for test_home.TestHome.test_drag_and_drop.executor": "Run",
+    "Python tests.pytest for test_home.TestHome.test_get_order_from_account.executor": "Run",
+    "Python tests.pytest for test_login.TestLogin.test_click_history_button.executor": "Run",
+    "Python tests.pytest for test_login.TestLogin.test_exit_account.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Admin/yandex/Diplom_1",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python tests.pytest for test_account.TestAccount.test_click_history_button">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Diplom_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_3" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="Diplom_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_3" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="Diplom_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_3" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_account.TestAccount" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_account.TestAccount&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_account.TestAccount.test_click_account_button" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_account.TestAccount.test_click_account_button&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_account.TestAccount.test_click_history_button" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\yandex\Diplom_3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_account.TestAccount.test_click_history_button&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_account.TestAccount.test_click_view_password" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_account.TestAccount.test_click_view_password&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_home.TestHome.test_create_order_for_account" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (Diplom_3)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_home.TestHome.test_create_order_for_account&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for test_account.TestAccount.test_click_history_button" />
+        <item itemvalue="Python tests.pytest for test_account.TestAccount.test_click_view_password" />
+        <item itemvalue="Python tests.pytest for test_account.TestAccount" />
+        <item itemvalue="Python tests.pytest for test_account.TestAccount.test_click_account_button" />
+        <item itemvalue="Python tests.pytest for test_home.TestHome.test_create_order_for_account" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -35,6 +251,116 @@
       <option name="presentableId" value="Default" />
       <updated>1728991907334</updated>
     </task>
+    <task id="LOCAL-00001" summary="тесты на Восстановление пароля">
+      <option name="closed" value="true" />
+      <created>1729001079019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729001079019</updated>
+    </task>
+    <task id="LOCAL-00002" summary="все остальные тесты">
+      <option name="closed" value="true" />
+      <created>1729279990118</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729279990118</updated>
+    </task>
+    <task id="LOCAL-00003" summary="добавление аллюра">
+      <option name="closed" value="true" />
+      <created>1729427250497</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729427250497</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feed улучшен">
+      <option name="closed" value="true" />
+      <created>1729429314025</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729429314025</updated>
+    </task>
+    <task id="LOCAL-00005" summary="авторизация через фикстуру">
+      <option name="closed" value="true" />
+      <created>1729430031497</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729430031497</updated>
+    </task>
+    <task id="LOCAL-00006" summary="упрощены тесты feed">
+      <option name="closed" value="true" />
+      <created>1729434097977</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729434097977</updated>
+    </task>
+    <task id="LOCAL-00007" summary="дочищено">
+      <option name="closed" value="true" />
+      <created>1729434613983</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729434613983</updated>
+    </task>
+    <task id="LOCAL-00008" summary="history button исправлено">
+      <option name="closed" value="true" />
+      <created>1729436599134</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729436599134</updated>
+    </task>
+    <task id="LOCAL-00009" summary="отчет">
+      <option name="closed" value="true" />
+      <created>1729446004026</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1729446004026</updated>
+    </task>
+    <task id="LOCAL-00010" summary="локаторы перенесены в page">
+      <option name="closed" value="true" />
+      <created>1729534287472</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729534287472</updated>
+    </task>
+    <task id="LOCAL-00011" summary="requirements">
+      <option name="closed" value="true" />
+      <created>1729534556674</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729534556674</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="тесты на Восстановление пароля" />
+    <MESSAGE value="все остальные тесты" />
+    <MESSAGE value="добавление аллюра" />
+    <MESSAGE value="feed улучшен" />
+    <MESSAGE value="авторизация через фикстуру" />
+    <MESSAGE value="упрощены тесты feed" />
+    <MESSAGE value="дочищено" />
+    <MESSAGE value="history button исправлено" />
+    <MESSAGE value="отчет" />
+    <MESSAGE value="локаторы перенесены в page" />
+    <MESSAGE value="requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="__py_debug_temp_var_1621590593.rect" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
