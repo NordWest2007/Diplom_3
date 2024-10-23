@@ -4,8 +4,8 @@ import requests
 
 from selenium import webdriver
 
-from constants import Constants
-from data.data_for_api import DataApi
+
+from data.data_api import DataApi
 
 from pages.home_page import HomePage
 from pages.account_page import AccountPage
